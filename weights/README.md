@@ -1,0 +1,1 @@
+Github does not allow files over 100MB. For this reason, please download the model on [Baidu](https://pan.baidu.com/s/17cpDHEwYVxWmOIPqUy5zCQ) or [Google](https://drive.google.com/open?id=11pZy4DhslDP9cEk2uN9wNhTmB1VZ7GIR) and place it here.

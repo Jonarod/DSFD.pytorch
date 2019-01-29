@@ -2,7 +2,7 @@
 [A PyTorch Implementation of Dual Shot Face Detector](https://arxiv.org/abs/1810.10220?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+arxiv%2FQSXk+%28ExcitingAds%21+cs+updates+on+arXiv.org%29)
 
 ### Description
-I use basenet [vgg](https://pan.baidu.com/s/1Q-YqoxJyqvln6KTcIck1tQ) to train DSFD,the model can be downloaded in [DSFD](https://pan.baidu.com/s/17cpDHEwYVxWmOIPqUy5zCQ).the AP in WIDER FACE as following:  
+I use basenet [vgg](https://pan.baidu.com/s/1Q-YqoxJyqvln6KTcIck1tQ) to train DSFD, the model can be downloaded in [DSFD with Baidu](https://pan.baidu.com/s/17cpDHEwYVxWmOIPqUy5zCQ) or [DSFD with Google Drive](https://drive.google.com/open?id=11pZy4DhslDP9cEk2uN9wNhTmB1VZ7GIR). The AP in WIDER FACE as following:  
 
 | Easy MAP | Medium MAP	|  hard MAP |
 | ---------|------------| --------- |
