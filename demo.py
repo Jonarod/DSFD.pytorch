@@ -84,12 +84,12 @@ def detect(net, img_path, thresh):
             pt = (detections[0, i, j, 1:] * scale).cpu().numpy().astype(int)
             left_up, right_bottom = (pt[0], pt[1]), (pt[2], pt[3])
             j += 1
-            cv2.rectangle(img, left_up, right_bottom, (0, 0, 255), 1)
-            # conf = "{:.2f}".format(score)
-            # text_size, baseline = cv2.getTextSize(conf, cv2.FONT_HERSHEY_SIMPLEX, 0.3, 1)
-            # p1 = (left_up[0], left_up[1] - text_size[1])
-            # cv2.rectangle(img, (p1[0] - 2 // 2, p1[1] - 2 - baseline),(p1[0] + text_size[0], p1[1] + text_size[1]),[255,0,0], -1)
-            # cv2.putText(img, conf, (p1[0], p1[1] + baseline), cv2.FONT_HERSHEY_SIMPLEX, 0.3, (255, 255, 255), 1, 8)
+            cv2.rectangle(img, left_up, right_bottom, (0, 0, 255), 2)
+            conf = "{:.2f}".format(score)
+            text_size, baseline = cv2.getTextSize(conf, cv2.FONT_HERSHEY_SIMPLEX, 0.3, 1)
+            p1 = (left_up[0], left_up[1] - text_size[1])
+            cv2.rectangle(img, (p1[0] - 2 // 2, p1[1] - 2 - baseline),(p1[0] + text_size[0], p1[1] + text_size[1]),[255,0,0], -1)
+            cv2.putText(img, conf, (p1[0], p1[1] + baseline), cv2.FONT_HERSHEY_SIMPLEX, 0.3, (255, 255, 255), 1, 8)
 
     t2 = time.time()
     print('detect:{} timer:{}'.format(img_path, t2 - t1))
